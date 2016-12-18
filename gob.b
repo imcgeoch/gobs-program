@@ -49,7 +49,7 @@ Gob's program in Brainfuck(1.0)
 <. ?
 >>++. 
 
-
+If statement:
 > 
 0[-]
 >
@@ -61,12 +61,11 @@ Put 'Y' in blank cell
 <-
 ]
 >-
-
-x
-
+'Y' is in cell x
 > , 
-y
+Input is in cell y
 
+x==y perserving y by Jeffery Johnston
 <[<+>-]+      copy x into 1 x = 1
 >[<<-<+>>>-]  copy y into 0, subtract y from 1
               1 = 0 if x=y
@@ -74,10 +73,9 @@ y
 >[>-<[-]]     subtract 1 from x if 1 neq 0
 >             points to 1 if x=y
 
-^xy_____
 
+Write "PENUS \n" into next seven cells of memory
  >> +++++ +++++
- xy^10
  [>
    +++++ +++>
    +++++ ++>
@@ -85,8 +83,9 @@ y
    +++++ +++>
    +++++ +++>
    +++ >
+   +++ >
    +
-   <<<<< <
+   <<<<< <<
  <-]
  >
  >-
@@ -94,7 +93,15 @@ y
  >+++++
  >+++
  >++
+ >++
 
- <<<<< <<<
-[>>[-]+++++ ++[>.>.>.>.>.>.<<<<<<-]>>>>> >> . <<<<< <<<<]
+Go back to x which holds result of if statement
+<<<<< <<<<
+Loop wil run if x is 1
+[>>[-]
+	"PENUS " seven times
+	+++++ ++[>.>.>.>.>.>.>.<<<<< <<-] 
+	Newline
+	>>>>> >>> . <<<<< <<<<<
+]
 
