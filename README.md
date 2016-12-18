@@ -5,6 +5,8 @@ Gob's Program
 
 An implementation of Gob's program, written in Brainfuck.
 
+A commented version (gob.b) and minified version (gobmin.b) are provided.
+
 Compilation:
 ------------
 
