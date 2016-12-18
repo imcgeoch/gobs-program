@@ -1,8 +1,6 @@
 [
 Gob's program in Brainfuck(1.0)
-
-| Print Question | Input |
-
+| Print Question | Y | Input |    
 ]
 +++++ +++++[
 > +++++ ++      G 71
@@ -50,5 +48,53 @@ Gob's program in Brainfuck(1.0)
 >. \n
 <. ?
 >>++. 
-> New blank cell
+
+
+> 
+0[-]
+>
+1[-]
+Put 'Y' in blank cell
++++++ +++++
+[>
++++++ ++++
+<-
+]
+>-
+
+x
+
+> , 
+y
+
+<[<+>-]+      copy x into 1 x = 1
+>[<<-<+>>>-]  copy y into 0, subtract y from 1
+              1 = 0 if x=y
+<<<[>>>+<<<-] copy 0 into y
+>[>-<[-]]     subtract 1 from x if 1 neq 0
+>             points to 1 if x=y
+
+^xy_____
+
+ >> +++++ +++++
+ xy^10
+ [>
+   +++++ +++>
+   +++++ ++>
+   +++++ +++>
+   +++++ +++>
+   +++++ +++>
+   +++ >
+   +
+   <<<<< <
+ <-]
+ >
+ >-
+ >--
+ >+++++
+ >+++
+ >++
+
+ <<<<< <<<
+[>>[-]+++++ ++[>.>.>.>.>.>.<<<<<<-]>>>>> >> . <<<<< <<<<]
 
