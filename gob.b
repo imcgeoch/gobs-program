@@ -81,24 +81,24 @@ x==y perserving y by Jeffery Johnston
 >             points to 1 if x=y
 
 
-Write "PENUS \n" into next seven cells of memory
+Write "Penus \n" into next seven cells of memory
  >> +++++ +++++
  [>
    +++++ +++>
-   +++++ ++>
-   +++++ +++>
-   +++++ +++>
-   +++++ +++>
+   +++++ +++++>
+   +++++ +++++ +>
+   +++++ +++++ ++>
+   +++++ +++++ +>
    +++ >
    +++ >
    +
    <<<<< <<
  <-]
  >
- >-
- >--
+ >+
+ >
+ >---
  >+++++
- >+++
  >++
  >++
 
@@ -106,7 +106,7 @@ Go back to x which holds result of if statement
 <<<<< <<<<
 Loop wil run if x is 1
 [>>[-]
-	"PENUS " seven times
+	"Penus " seven times
 	+++++ ++[>.>.>.>.>.>.>.<<<<< <<-] 
 	Newline
 	>>>>> >>> . <<<<< <<<<<
